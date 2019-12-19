@@ -62,7 +62,7 @@
   height: 40px;
   border-radius: 50%;
   border: 2px solid #ff3e79;
-  background: url(/img/dropdown.png) no-repeat 50% 50%;
+  background: url(img/dropdown.png) no-repeat 50% 50%;
   display: flex;
   position: absolute;
   right: 25px; }
@@ -116,7 +116,7 @@
     height: 40px;
     border-radius: 50%;
     border: 2px solid #ff3e79;
-    background: url(/img/dropdown.png) no-repeat 50% 50%;
+    background: url(img/dropdown.png) no-repeat 50% 50%;
     display: flex;
     position: absolute;
     right: 25px;
@@ -239,14 +239,14 @@ ul {
   margin-bottom: 25px; }
 
 .list-links::before {
-  content: url(/img/leftline.png);
+  content: url(img/leftline.png);
   position: relative;
   left: 0px;
   top: 10px;
   opacity: 0; }
 
 .list-links:hover::before {
-  content: url(/img/leftline.png);
+  content: url(img/leftline.png);
   position: relative;
   left: -16px;
   top: 10px;
