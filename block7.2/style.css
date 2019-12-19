@@ -43,7 +43,7 @@
 .list__item {
   display: flex;
   align-items: center;
-  width: 224px;
+  width: 240px;
   height: 72px;
   border-radius: 6px;
   border: 1px solid #eaeaea;
