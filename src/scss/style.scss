@@ -1,0 +1,428 @@
+$white: #fff;
+$button-color: #ff3e79;
+/*swiper*/
+@import "../../node_modules/swiper/css/swiper.min.css";
+@import "swiper";
+/*cлайдер 1*/
+@import "slider_1";
+/*слайдер 2*/
+@import "slider_2";
+/*слайдер 3*/
+@import "slider_3";
+/*меню*/
+@import "menu_320";
+/*моддальное окно_320*/
+@import "message_modal_320";
+/*обратный звонок*/
+@import "order_call320";
+/*таблица услуг*/
+@import "table";
+/*версия 1440*/
+@import "modal_feedback_1440";
+@import "modal_call_1440";
+
+/*шрифты*/
+@font-face {
+  font-family: TTLakes-Bold;
+  src: url(../fonts/TTLakes-Bold.eot);
+  src: url(../fonts/TTLakes-Bold.ttf);
+  src: url(../fonts/TTLakes-Bold.woff);
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: TTLakes-Medium;
+  src: url(../fonts/TTLakes-Medium.eot);
+  src: url(../fonts/TTLakes-Medium.ttf);
+  src: url(../fonts/TTLakes-Medium.woff);
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: TTLakesCondensed-Regular;
+  src: url(../fonts/TTLakesCondensed-Regular.eot);
+  src: url(../fonts/TTLakesCondensed-Regular.ttf);
+  src: url(../fonts/TTLakesCondensed-Regular.woff);
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/*основные стили*/
+.common-block {
+  background-color: #f8f8f8;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 320px;
+}
+
+/*header*/
+.header {
+  background-color: $white;
+  border-bottom: 1px solid #d9fff5;
+}
+
+.menu-button {
+  all: unset;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $button-color;
+  transition: transform 0.2s ease-in-out;
+}
+
+/*link-list*/
+.header-menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  padding-inline-start: 0;
+  width: 320px;
+
+  .header-menu__item:not(:first-child) {
+    padding-left: 16px;
+  }
+
+  .header-menu__item {
+    .header__item--menu {
+      background: url(/src/img/menu.png) no-repeat 50% 50% $button-color;
+    }
+
+    .header__item--tooling {
+      background: url(/src/img/tooling.png) no-repeat 50% 50% $button-color;
+    }
+
+    .img-divider::after {
+      content: url(/src/img/divider.png);
+    }
+    .header__item--search {
+      background: url(/src/img/search.png) no-repeat 50% 50% $button-color;
+    }
+  }
+}
+
+/*section*/
+.elem-indent {
+  padding-left: 16px;
+}
+/*заголовок*/
+.section-header__headline {
+  font-family: TTLakes-Bold, sans-serif;
+  display: flex;
+  font-size: 28px;
+}
+
+.section-header__headline::before {
+  content: url(/src/img/highlight.png);
+  position: absolute;
+  left: -1px;
+}
+
+.services {
+  position: relative;
+  .section-list {
+    .section-list__item {
+      width: auto;
+      list-style-type: none;
+    }
+    .section-list__link {
+      font-family: TTLakesCondensed-Regular, sans-serif;
+      text-decoration: none;
+      color: black;
+      padding: 8px 16px;
+      line-height: 24px;
+      border: 1px solid #f8f8f8;
+      display: flex;
+      text-decoration: none;
+      white-space: nowrap;
+      color: #7e7e82;
+    }
+    .section-list__link:hover {
+      background-color: $white;
+      border: 1px solid #41f6d7;
+      border-radius: 6px;
+      background-color: $white;
+    }
+  }
+}
+
+.description {
+  font-family: TTLakesCondensed-Regular, sans-serif;
+  font-size: 14px;
+}
+.description-additional {
+  font-family: TTLakesCondensed-Regular, sans-serif;
+  font-size: 14px;
+}
+
+/*скрывает текст*/
+.open {
+  display: none;
+}
+
+
+.expand-button {
+  margin-bottom: 15px;
+  cursor: pointer;
+  border: none;
+  background: #f8f8f8;
+  font-family: TTLakes-Medium, sans-serif;
+}
+.expand-button::before {
+  content: url(/src/img/icon-arrows.png);
+  background-image: url(/src/img/icon-arrows.png) no-repeat 50% 50%;
+  margin-right: 17px;
+}
+.company-img {
+  position: relative;
+  left: -16px;
+}
+
+/*общие стили для абзацев*/
+.text {
+  align-items: center;
+  display: flex;
+  min-height: 48px;
+  text-transform: uppercase;
+  color: #7e7e82;
+  font-family: TTLakesCondensed-Regular, sans-serif;
+  background: linear-gradient(270deg, $white 0%, #f8f8f8 98.61%);
+}
+
+/*общие свойства для списков*/
+.list {
+  display: flex;
+  padding: 0;
+  list-style-type: none;
+}
+
+/*ссылка над футером*/
+.offer {
+  .offer__link {
+    font-family: TTLakes-Medium, sans-serif;
+    text-decoration: none;
+    color: #000;
+  }
+  .offer__link::after {
+    content: url(/src/img/line.png);
+    margin-left: 7px;
+    display: inline;
+    vertical-align: middle;
+  }
+}
+/*стили кнопок*/
+.menu-button:hover {
+  transform: scale(1.2);
+}
+
+
+/*кнопки в хедере */
+.header-menu__item--call {
+  background: url(/src/img/call.png) no-repeat 50% 50% #ff3e79;
+}
+.header-menu__item--message {
+  background: url(/src/img/message.png) no-repeat 50% 50% #ff3e79;
+}
+.header-menu__item--user {
+  background: url(/src/img/user.png) no-repeat 50% 50% #ff3e79;
+}
+
+/*кнопки в меню*/
+.middle-menu__item--call {
+  background: url(/src/img/call.png) no-repeat 50% 50% #ff3e79;
+}
+.middle-menu__item--message {
+  background: url(/src/img/message.png) no-repeat 50% 50% #ff3e79;
+}
+.middle-menu__item--user {
+  background: url(/src/img/user.png) no-repeat 50% 50% #ff3e79;
+}
+
+/*общий стиль для кнопки в модалках*/
+.form__button {
+  all: unset;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: #ff3e79;
+  border-radius: 16px;
+  color: #fff;
+  height: 32px;
+  width: 105px;
+  padding-left: 25px;
+  font-family: TTLakes-Bold, sans-serif;
+  font-size: 12px;
+  position: relative;
+  left: 250px;
+  bottom: 0px;
+  text-transform: uppercase;
+}
+
+
+
+@media screen and (max-width: 320px) {
+  .common-block {
+    width: 320px;
+  }
+  .header-menu__item--hidden-img {
+    display: none;
+  }
+  .header-menu--hidden {
+    display: none;
+    padding-left: 16px;
+  }
+
+  /*footer*/
+  .footer {
+    text-align: center;
+    font-family: TTLakesCondensed-Regular, sans-serif;
+    color: #7e7e82;
+    font-size: 14px;
+  }
+}
+/*медиа*/
+@media screen and (max-width: 769px) {
+  .section-list {
+    display: flex;
+    padding-inline-start: 0;
+    overflow-x: scroll;
+  }
+  .form__button {
+    left: 150px;
+  }
+}
+@media screen and (min-width: 321px) {
+  .common-block {
+    width: 768px;
+  }
+  .company-img {
+    position: static;
+    border-radius: 5px;
+    width: 360px;
+}
+  .company-profile{
+    display: flex;
+    justify-content: space-between;
+  }
+
+  /**/
+  .header-menu {
+    width: 768px;
+  }
+  /*Услуги и сервисы*/
+  .expand-button {
+    margin-bottom: 55px;
+  }
+  .description {
+    width: 315px;
+  }
+  .header-menu__item:nth-child(3) {
+    margin-right: 250px;
+  }
+  .footer {
+    display: flex;
+    font-family: TTLakesCondensed-Regular, sans-serif;
+    color: #7e7e82;
+    font-size: 14px;
+  }
+  .footer__text {
+    margin-right: 35px;
+    min-width: 213px;
+  }
+}
+.section-links__link{
+  display: none;
+}
+
+/*full*/
+@media screen and (min-width: 769px) {
+  .common-block {
+    position: absolute;
+    top: -10px;
+    left: 350px;
+    min-width: 1120px;
+  }
+  .header {
+    display: none;
+  }
+
+  .section-list {
+    display: flex;
+  }
+  .company-profile {
+    justify-content: space-between;
+    display: flex;
+  }
+  .company-img {
+    padding-right: 45px;
+    width: 531px;
+    border-radius: 5px;
+  }
+  .section {
+    width: 1120px;
+  }
+  .services {
+    width: 1120px;
+  }
+  .description {
+    width: 100%;
+  }
+  .section-header {
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .section-links {
+    display: flex;
+    flex-direction: row;
+  }
+  .section-links__link {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: black;
+    padding-right: 32px;
+    font-family: TTLakes-Medium, sans-serif;
+  }
+  .section-links__link:last-child {
+    padding-right: 60px;
+  }
+  .section-links--tooling::after {
+    content: url(/src/img/repair.png);
+    padding-left: 16px;
+  }
+  .section-links--search::after {
+    content: url(/src/img/checkstatus.png);
+    padding-left: 16px;
+  }
+
+  /*таблица*/
+  .categories-list {
+    width: 1056px;
+  }
+  .category-cell1 {
+    width: 40%;
+  }
+  .category-cell2 {
+    width: 25%;
+  }
+  .category-cell3 {
+    width: 10%;
+  }
+  .category-iteam:not(:last-child)::after {
+    content: url(/src/img/rectangle_full.png);
+  }
+  .description {
+    width: 421px;
+  }
+}

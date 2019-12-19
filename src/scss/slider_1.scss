@@ -1,0 +1,71 @@
+.list__item {
+  display: flex;
+  align-items: center;
+  width: 224px;
+  height: 72px;
+  border-radius: 6px;
+  border: 1px solid #eaeaea;
+  background-color: white;
+  position: relative;
+  background-color: #fff;
+}
+
+.list-item__img-maker {
+  position: relative;
+  left: 14px;
+}
+
+.list-item__button {
+  all: unset;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 2px solid $button-color;
+  background: url(/img/dropdown.png) no-repeat 50% 50%;
+  display: flex;
+  position: absolute;
+  right: 25px;
+}
+
+@media screen and (min-width: 321px) {
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list__item {
+    display: flex;
+    margin-right: 24px;
+    margin-bottom: 16px;
+  }
+
+  /*Развернуть/свернуть*/
+  .list__item:nth-child(n + 9) {
+    display: none;
+  }
+  .expand .list__item:nth-child(n + 9) {
+    display: flex;
+  }
+  .list__button-control {
+    cursor: pointer;
+    border: none;
+    background: #f8f8f8;
+    display: flex;
+    cursor: pointer;
+    font-family: TTLakes-Medium, sans-serif;
+  }
+  .list__button-control::before {
+    content: url(/src/img/icon-arrows.png);
+    padding-right: 16px;
+  }
+}
+@media screen and (min-width: 361px) {
+  .list__item {
+    width: 224px;
+  }
+}
+@media screen and (max-width: 361px) {
+  .list__button-control {
+    display: none;
+  }
+}

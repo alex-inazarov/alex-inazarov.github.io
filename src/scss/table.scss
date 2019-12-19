@@ -1,0 +1,72 @@
+.table-services {
+  font-family: TTLakesCondensed-Regular, sans-serif;
+  font-size: 14px;
+}
+.category {
+  display: flex;
+  list-style-type: none;
+  padding-left: 16px;
+  color: #7e7e82;
+}
+.categories-list {
+  border-radius: 6px;
+  background-color: #fff;
+  width: 720px;
+}
+.category-iteam {
+  align-items: center;
+  display: flex;
+  list-style-type: none;
+  flex-wrap: wrap;
+  padding-left: 16px;
+}
+.category-iteam:first-child {
+  padding-top: 16px;
+}
+.category-iteam:last-child {
+  padding-bottom: 16px;
+}
+
+.category-cell1 {
+  width: 300px;
+}
+.category-cell2 {
+  width: 75px;
+}
+.category-cell3 {
+  width: 81px;
+  margin-right: 105px;
+}
+
+.category-iteam__button {
+  all: unset;
+  cursor: pointer;
+  text-transform: uppercase;
+  background-color: $button-color;
+  border-radius: 16px;
+  color: $white;
+  height: 32px;
+  width: 105px;
+  padding-left: 25px;
+  font-family: TTLakes-Bold, sans-serif;
+  font-size: 12px;
+  bottom: 20px;
+  text-transform: uppercase;
+}
+.category-iteam__button::after {
+  content: url(/src/img/right-arrow.png);
+}
+.category-iteam__button--text{
+  margin-right: 10px;
+}
+
+@media screen and (max-width: 321px) {
+  .table-services {
+    display: none;
+  }
+}
+@media screen and (max-width: 769px) {
+  .category-iteam:not(:last-child)::after {
+    content: url(/src/img/rectangle.png);
+  }
+}

@@ -1,0 +1,73 @@
+
+.modal-message320{
+  min-height: 100%;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+
+  .headline{
+    font-size: 28px;
+    font-family: TTLakes-Medium, sans-serif;
+    display: flex;
+    align-items: center;
+  }
+  .headline::before {
+    content: url(/src/img/highlight1440.png);
+    position: relative;
+    left: -16px;
+  }
+ 
+  .modal--close{
+    background: url(/src/img/close.png) no-repeat 50% 50% #FF3E79;
+    margin-bottom: 56px;
+    position: relative;
+    top: 24px;
+  }
+}
+.form__input{
+  font-family: TTLakesCondensed-Regular, sans-serif;
+  background: #FFFFFF;
+  border: 1px solid #EAEAEA;
+  border-radius: 8px;
+  color: #B5B6BC;
+  width: 228px;
+  height: 48px;
+  font-size: 16px;
+  padding-left: 16px;
+  margin-bottom: 16px;
+}
+.form__input--textarea {
+  padding-top: 16px;
+  height: 118px;
+}
+.form-button{
+  right: 70px;
+  bottom: -45px;
+  padding-left: 12px;
+}
+.headline--line{
+  padding-bottom: 24px;
+}
+.act-button__send{
+  padding-left: 15px;
+  position: relative;
+  left: 130px;
+  top: 0;
+}
+
+
+/*js*/
+.active-modal320 {
+  top: 0;
+  left: 0;
+  transition: left 0.5s;
+  background-color: #FFF;
+}
+.close-modal320{
+  top: 0;
+  left: -100%;
+  transition: 1s;
+}

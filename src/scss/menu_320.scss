@@ -1,0 +1,125 @@
+ul {
+  padding-inline-start: 0;
+}
+
+.menu {
+  min-height: 100%;
+  display: flex;
+  justify-content: space-between;
+  width: 320px;
+  position: absolute;
+  left: -100%;
+  top: 0;
+  flex-direction: column;
+
+  .top-menu {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    /*header*/
+    .menu-item__close {
+      background: url(/src/img/close.png) no-repeat 50% 50% #ff3e79;
+      margin-right: 10px;
+    }
+    .menu-item__look {
+      background: url(/src/img/look.png) no-repeat 50% 50% #ff3e79;
+      position: absolute;
+      top: 24px;
+      left: 260px;
+    }
+  }
+}
+
+/*nav*/
+.list-links {
+  list-style-type: none;
+  margin-bottom: 25px;
+}
+.list-links::before {
+  content: url(/img/leftline.png);
+  position: relative;
+  left: 0px;
+  top: 10px;
+  opacity: 0;
+}
+.list-links:hover::before {
+  content: url(/img/leftline.png);
+  position: relative;
+  left: -16px;
+  top: 10px;
+  opacity: 1;
+}
+.links {
+  text-decoration: none;
+  color: black;
+  font-family: TTLakes-Medium, sans-serif;
+}
+.links:hover {
+  color: #7e7e82;
+}
+
+/*footer-menu*/
+.footer-menu {
+  display: flex;
+  flex-direction: column;
+}
+
+/*кнопки*/
+.top-menu__item {
+  display: inline;
+  margin-right: 10px;
+}
+.middle-menu__item {
+  display: inline;
+  margin-right: 10px;
+}
+
+/*connection*/
+.connection {
+  list-style-type: none;
+  margin-bottom: 10px;
+}
+.connection + .connection {
+  font-size: 24px;
+}
+
+/*выбор языка*/
+.lang {
+  list-style-type: none;
+  display: inline;
+  font-family: TTLakes-Medium, sans-serif;
+}
+
+/*js*/
+.active-menu {
+  top: 0;
+  left: 0%;
+  transition: left 0.5s;
+  background-color: #fff;
+}
+.close-menu {
+  right: -100%;
+  transition: 0.8s;
+}
+
+@media screen and (min-width: 321px) {
+  .menu {
+    box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+      -2px 0px 4px rgba(69, 79, 126, 0.02);
+  }
+}
+@media screen and (min-width: 769px) {
+  .menu {
+    position: absolute;
+    left: 0%;
+    top: 0;
+    box-shadow: none;
+  }
+  .top-menu {
+    display: flex;
+  }
+  .top-menu__item:first-child {
+    display: none;
+  }
+}

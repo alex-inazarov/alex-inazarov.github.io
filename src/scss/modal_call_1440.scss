@@ -1,0 +1,29 @@
+.modal-call1440 {
+  position: fixed;
+  right: -100%;
+  top: 0;
+  width: 440px;
+  min-height: 100%;
+  background-color: #fff;
+  box-shadow: 16px 0px 52px rgba(14, 24, 80, 0.2),
+    -2px 0px 4px rgba(69, 79, 126, 0.02);
+}
+.modal__button--close-call {
+  position: relative;
+  left: -80px;
+  background: url(/src/img/close.png) no-repeat 50% 50% #ff3e79;
+}
+
+/*js*/
+.modal-call1440--active {
+  transition: right 0.6s;
+}
+.modal-call1440--close-mess {
+  transition: right 1s;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-call1440 {
+    display: none;
+  }
+}

@@ -1,0 +1,75 @@
+.modal-message1440 {
+  position: fixed;
+  right: -100%;
+  top: 0;
+}
+.modal-header {
+  display: flex;
+  align-items: center;
+}
+.modal__button {
+  all: unset;
+  cursor: pointer;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: $button-color;
+  transition: transform 0.2s ease-in-out;
+}
+.modal__button:hover {
+  transform: scale(1.2);
+}
+.modal__button--close-mess {
+  position: relative;
+  left: -80px;
+  background: url(/src/img/close.png) no-repeat 50% 50% #ff3e79;
+}
+.modal__headline {
+  display: flex;
+  align-items: center;
+  position: relative;
+  left: -37px;
+  font-family: TTLakes-Medium, sans-serif;
+}
+.modal__headline::before {
+  content: url(/src/img/highlight1440.png);
+  position: relative;
+  left: -20px;
+}
+.form__description {
+  width: 376px;
+  font-family: TTLakesCondensed-Regular, sans-serif;
+  font-size: 14px;
+}
+.form__description__link {
+  text-decoration: none;
+  color: #ff3e79;
+}
+
+/*js*/
+.modal-message1440--active {
+  transition: right 0.6s;
+}
+.modal-message1440--close-mess {
+  transition: right 0.6s;
+}
+
+@media screen and (max-width: 768px) {
+  .modal-message1440 {
+    display: none;
+  }
+}
+@media screen and (min-width: 769px) {
+  .modal-message1440 {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    min-height: 100%;
+    width: 440px;
+    box-shadow: -2px 0px 4px rgba(69, 79, 126, 0.02),
+      16px 0px 52px rgba(14, 24, 80, 0.2);
+  }
+  .form__input {
+    width: 376px;
+  }
+}

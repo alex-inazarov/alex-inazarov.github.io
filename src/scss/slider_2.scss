@@ -1,0 +1,75 @@
+.list__item2 {
+  padding: 0;
+  display: flex;
+  font-family: TTLakes-Medium, sans-serif;
+  width: 260px;
+  height: 160px;
+  border-radius: 6px;
+  background-color: $white;
+  position: relative;
+
+  .list-item2__button {
+    all: unset;
+    cursor: pointer;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 2px solid $button-color;
+    background: url(/img/dropdown.png) no-repeat 50% 50%;
+    display: flex;
+    position: absolute;
+    right: 25px;
+    bottom: 15px;
+
+    .list__item2--type {
+      font-family: TTLakes-Medium, sans-serif;
+      left: -15px;
+    }
+  }
+}
+@media screen and (min-width: 361px) {
+  .list2 {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .list__item2 {
+    width: 225px;
+    margin-right: 24px;
+    margin-bottom: 16px;
+    padding-left: 16px;
+    border: 1px solid #eaeaea;
+  }
+
+  /*развернуть/свернуть*/
+  .list__item2:nth-child(n + 5) {
+    display: none;
+  }
+
+  .expand2 .list__item2:nth-child(n + 5) {
+    display: flex;
+  }
+
+  .list__button-control2 {
+    cursor: pointer;
+    border: none;
+    background: #f8f8f8;
+    display: flex;
+    cursor: pointer;
+    font-family: TTLakes-Medium, sans-serif;
+  }
+  .list__button-control2::before {
+    content: url(/src/img/icon-arrows.png);
+    padding-right: 16px;
+  }
+}
+@media screen and (max-width: 361px){
+  .list__button-control2 {
+    display: none;
+  }
+}
+@media screen and (max-width: 769px){
+  .list__item2 {
+    width: 208px;
+  }
+}
+
