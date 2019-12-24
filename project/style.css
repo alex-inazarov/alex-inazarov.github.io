@@ -308,13 +308,13 @@ ul {
   margin-bottom: 24px; }
 
 .sidebar-nav__iteam::before {
-  content: url(/img/leftline.png);
+  content: url(img/leftline.png);
   position: relative;
   left: -17px;
   opacity: 0; }
 
 .sidebar-nav__iteam:hover::before {
-  content: url(/img/leftline.png);
+  content: url(img/leftline.png);
   position: relative;
   top: 10px;
   opacity: 1; }
@@ -468,7 +468,7 @@ ul {
 
 @media screen and (max-width: 769px) {
   .category-iteam:not(:last-child)::after {
-    content: url(/src/img/rectangle.png); } }
+    content: url(img/rectangle.png); } }
 
 /*версия 1440*/
 .modal-header {
@@ -490,7 +490,7 @@ ul {
 .modal__button--close-mess {
   position: relative;
   left: -80px;
-  background: url(/src/img/close.png) no-repeat 50% 50% #ff3e79; }
+  background: url(img/close.png) no-repeat 50% 50% #ff3e79; }
 
 .modal__headline {
   display: flex;
@@ -500,7 +500,7 @@ ul {
   font-family: TTLakes-Medium, sans-serif; }
 
 .modal__headline::before {
-  content: url(/src/img/highlight1440.png);
+  content: url(img/highlight1440.png);
   position: relative;
   left: -21px; }
 
@@ -617,7 +617,7 @@ ul {
     padding-bottom: 16px;
     padding-top: 30px; }
   .modal__headline::before {
-    content: url(/src/img/highlight1440.png);
+    content: url(img/highlight1440.png);
     position: relative;
     left: -17px; }
   /*js*/
@@ -639,7 +639,7 @@ ul {
 .modal__button--close-call {
   position: relative;
   left: -80px;
-  background: url(/src/img/close.png) no-repeat 50% 50% #ff3e79; }
+  background: url(img/close.png) no-repeat 50% 50% #ff3e79; }
 
 /*js*/
 .modal--active {
@@ -800,13 +800,13 @@ ul {
   .header-menu .header-menu__item:not(:first-child) {
     padding-left: 16px; }
   .header-menu .header-menu__item .header__item--menu {
-    background: url(/src/img/menu.png) no-repeat 50% 50% #ff3e79; }
+    background: url(img/menu.png) no-repeat 50% 50% #ff3e79; }
   .header-menu .header-menu__item .header__item--tooling {
-    background: url(/src/img/tooling.png) no-repeat 50% 50% #ff3e79; }
+    background: url(img/tooling.png) no-repeat 50% 50% #ff3e79; }
   .header-menu .header-menu__item .img-divider::after {
-    content: url(/src/img/divider.png); }
+    content: url(img/divider.png); }
   .header-menu .header-menu__item .header__item--search {
-    background: url(/src/img/search.png) no-repeat 50% 50% #ff3e79; }
+    background: url(img/search.png) no-repeat 50% 50% #ff3e79; }
 
 /*section*/
 .elem-indent {
@@ -869,7 +869,7 @@ ul {
   color: #000; }
 
 .offer .offer__link::after {
-  content: url(/src/img/line.png);
+  content: url(img/line.png);
   margin-left: 7px;
   display: inline;
   vertical-align: middle; }
@@ -880,23 +880,23 @@ ul {
 
 /*кнопки в хедере */
 .header-menu__item--call {
-  background: url(/src/img/call.png) no-repeat 50% 50% #ff3e79; }
+  background: url(img/call.png) no-repeat 50% 50% #ff3e79; }
 
 .header-menu__item--message {
-  background: url(/src/img/message.png) no-repeat 50% 50% #ff3e79; }
+  background: url(img/message.png) no-repeat 50% 50% #ff3e79; }
 
 .header-menu__item--user {
-  background: url(/src/img/user.png) no-repeat 50% 50% #ff3e79; }
+  background: url(img/user.png) no-repeat 50% 50% #ff3e79; }
 
 /*кнопки в меню*/
 .middle-menu__item--call {
-  background: url(/src/img/call.png) no-repeat 50% 50% #ff3e79; }
+  background: url(img/call.png) no-repeat 50% 50% #ff3e79; }
 
 .middle-menu__item--message {
-  background: url(/src/img/message.png) no-repeat 50% 50% #ff3e79; }
+  background: url(img/message.png) no-repeat 50% 50% #ff3e79; }
 
 .middle-menu__item--user {
-  background: url(/src/img/user.png) no-repeat 50% 50% #ff3e79; }
+  background: url(img/user.png) no-repeat 50% 50% #ff3e79; }
 
 /*общий стиль для кнопки в модалках*/
 .form__button {
