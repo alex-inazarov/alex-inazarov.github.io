@@ -61,7 +61,7 @@
   height: 40px;
   border-radius: 50%;
   border: 2px solid #ff3e79;
-  background: url(/img/dropdown.png) no-repeat 50% 50%;
+  background: url(img/dropdown.png) no-repeat 50% 50%;
   display: flex;
   position: absolute;
   right: 25px; }
@@ -87,7 +87,7 @@
     cursor: pointer;
     font-family: TTLakes-Medium, sans-serif; }
   .list__button-control::before {
-    content: url(/src/img/icon-arrows.png);
+    content: url(img/icon-arrows.png);
     padding-right: 16px; } }
 
 @media screen and (min-width: 361px) and (max-width: 769px) {
@@ -119,7 +119,7 @@
     cursor: pointer;
     font-family: TTLakes-Medium, sans-serif; }
   .list__button-control::before {
-    content: url(/src/img/icon-arrows.png);
+    content: url(img/icon-arrows.png);
     padding-right: 16px; } }
 
 /*слайдер 2*/
@@ -140,7 +140,7 @@
     height: 40px;
     border-radius: 50%;
     border: 2px solid #ff3e79;
-    background: url(/img/dropdown.png) no-repeat 50% 50%;
+    background: url(img/dropdown.png) no-repeat 50% 50%;
     display: flex;
     position: absolute;
     right: 25px;
@@ -175,7 +175,7 @@
     font-family: TTLakes-Medium, sans-serif;
     font-size: 16px; }
   .equipment-repair__button-expand::before {
-    content: url(/src/img/icon-arrows.png);
+    content: url(img/icon-arrows.png);
     padding-right: 16px; } }
 
 @media screen and (max-width: 321px) {
@@ -206,7 +206,7 @@
     font-family: TTLakes-Medium, sans-serif;
     font-size: 16px; }
   .equipment-repair__button-expand::before {
-    content: url(/src/img/icon-arrows.png);
+    content: url(img/icon-arrows.png);
     padding-right: 16px; } }
 
 /*слайдер 3*/
@@ -247,7 +247,7 @@
         right: 10px;
         bottom: 10px; }
       .list3 .list__item3 .list__offer .list__act-button::after {
-        content: url(/src/img/right-arrow.png); }
+        content: url(img/right-arrow.png); }
       .list3 .list__item3 .list__offer .list__act-button--text {
         margin-right: 10px; }
 
@@ -288,19 +288,19 @@ ul {
       position: relative;
       left: -35px; }
     .sidebar .sidebar-top .sidebar-top__button-close {
-      background: url(/src/img/close.png) no-repeat 50% 50% #ff3e79; }
+      background: url(img/close.png) no-repeat 50% 50% #ff3e79; }
     .sidebar .sidebar-top .sidebar-top__button-search {
-      background: url(/src/img/look.png) no-repeat 50% 50% #ff3e79; }
+      background: url(img/look.png) no-repeat 50% 50% #ff3e79; }
 
 .sidebar-menu {
   display: flex;
   list-style-type: none; }
   .sidebar-menu .sidebar-menu__button-call {
-    background: url(/src/img/call.png) no-repeat 50% 50% #ff3e79; }
+    background: url(img/call.png) no-repeat 50% 50% #ff3e79; }
   .sidebar-menu .sidebar-menu__button-message {
-    background: url(/src/img/message.png) no-repeat 50% 50% #ff3e79; }
+    background: url(img/message.png) no-repeat 50% 50% #ff3e79; }
   .sidebar-menu .sidebar-menu__button-user {
-    background: url(/src/img/user.png) no-repeat 50% 50% #ff3e79; }
+    background: url(img/user.png) no-repeat 50% 50% #ff3e79; }
 
 /*nav*/
 .sidebar-nav__iteam {
