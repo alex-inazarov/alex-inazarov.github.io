@@ -61,7 +61,7 @@
   height: 40px;
   border-radius: 50%;
   border: 2px solid #ff3e79;
-  background: url(/img/dropdown.png) no-repeat 50% 50%;
+  background: url(/src/img/dropdown.png) no-repeat 50% 50%;
   display: flex;
   position: absolute;
   right: 25px; }
