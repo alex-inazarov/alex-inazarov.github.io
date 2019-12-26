@@ -87,7 +87,7 @@
     cursor: pointer;
     font-family: TTLakes-Medium, sans-serif; }
   .list__button-control::before {
-    content: url(/img/icon-arrows.png);
+    content: url(/src/img/icon-arrows.png);
     padding-right: 16px; } }
 
 @media screen and (min-width: 361px) and (max-width: 769px) {
