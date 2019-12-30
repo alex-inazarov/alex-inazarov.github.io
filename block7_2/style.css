@@ -2156,5 +2156,9 @@ ul {
     width: 320px;
   }
 }
+.main{
+  margin: 0;
+  overflow-x: hidden; 
+}
 
 /*# sourceMappingURL=style.css.map*/
